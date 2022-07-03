@@ -68,3 +68,8 @@ enclave.signed.so: enclave.so
 		-enclave enclave.so \
 		-out $@ \
 		-config Enclave/Enclave.config.xml
+
+.PHOMY: clean
+
+clean:
+	arm -f app enclave.so enclave.signed.so App/Enclave_u.* Enclave/Enclave_t.* App/*.o Enclave/*.o

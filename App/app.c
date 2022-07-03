@@ -149,7 +149,7 @@ int main(int argc, char *argv[]) {
     return -1;
   }
 
-  display_message(global_eid);
+  display_message("Hello, World!\n", global_eid);
 
   // destroy enclave
   sgx_destroy_enclave(global_eid);
