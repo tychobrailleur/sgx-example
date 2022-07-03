@@ -1,0 +1,5 @@
+Generate key:
+
+#+begin_src bash
+  openssl genrsa -out private_key.pem -3 3072
+#+end_src
